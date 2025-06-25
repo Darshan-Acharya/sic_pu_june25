@@ -1,1 +1,2 @@
-this file is a dummy file which is created for the basic git understanding it's changed by the local repo
+by the this file is a dummy file which is created for the basic git understanding it's changed by the local repo
+again edited by the remote repo
