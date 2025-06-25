@@ -90,6 +90,41 @@ o Annual Gross Salary should not exceed realistic values.
 o Reject invalid inputs with a clear error message.
 o Provide re-entry prompts for invalid data.
 
+solution:
+1st level:
+#input
+employee_name = input("Enter the employee name: ")
+employee_ID = input("Enter the employee ID: ")
+monthly_salary = int(input("Enter the basic monthly salary: ")
+special_allowance = int(input("Enter the special allowance: ")
+bonus = int(input("Enter the bonus (per year in %): ")
+
+gross_monthly_salary = monthly_salary + special_allowance 
+gross_annual_salary = gross_monthly_salary * 12
+gross_annual_salary += gross_annual_salary *bonus
+
+#display
+print("Employee ID: ",employee_ID)
+print("Monthly salary is: ",gross_monthly_salary)
+print("Gross annual salary(including bonus): ",gross_annual_salary)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Farmer Problem:
 Mahesh is a farmer and owns 80 acres of land. His land is equally divided into 5 segments. He grows
 tomatoes in the 1st segment, potatoes in the 2nd segment, cabbage in the 3rd segment, sunflower in
