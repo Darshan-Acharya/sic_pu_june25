@@ -4,7 +4,7 @@ employee_ID = input("Enter the employee ID: ")
 monthly_salary = int(input("Enter the basic monthly salary: "))
 special_allowance = int(input("Enter the special allowance: "))
 bonus = int(input("Enter the bonus (per year in %): "))
-
+bonus/=100
 gross_monthly_salary = monthly_salary + special_allowance 
 gross_annual_salary = gross_monthly_salary * 12
 gross_annual_salary += gross_annual_salary *bonus
@@ -32,7 +32,7 @@ else:
 
 #rebate     
 if gross_annual_salary <= 700000:
-    tax -= gross_annual_salary*(10/100)
+    tax = 0
 tax += gross_annual_salary*(4/100)
 
 print("Tax applied for you (including health and educaion tax)", tax)
