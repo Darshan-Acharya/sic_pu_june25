@@ -8,37 +8,6 @@
 
 5. Find out why there are no ++ and -- operators in Python.
 
-6. Check if a year is Leap year
- #code
- year = int(input("Enter the year to check wheater the year is leap year: "))
- if (year%4==0 and year%100!=0) or year%400==0:
-	print(year, " is leap year")
-
-
-7. Check if a +ve integer is Perfect square:
-
-#code
- square_number = int(input("Enter the positive number to check wheather it's perfect square number: ")
- while square_number>0:
- 	number = int(square_number**0.5)
- 	if square_number == number**2:
-		print(square_number, "is a perfect square number")
-
-
-
-8. Find smallest of 3 distinct numbers
-  numbers = list(map(int, input().strip().split()))
-while len(numbers)==3:
-    if numbers[0]<numbers[1] and numbers[0]<numbers[2]:
-        print(numbers[0], "is less than rest of the numbers")
-        break
-    elif numbers[1]<numbers[0] and numbers[1]<numbers[2]:
-        print(numbers[1], "is less than rest of the numbers")
-        break
-    else:
-        print(numbers[2], "is less than rest of the numbers")
-        break
-        
 
 9. Farmer Problem
 
