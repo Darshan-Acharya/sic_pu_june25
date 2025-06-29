@@ -1,4 +1,37 @@
 #assaignment questions
+
+#Check if a year is Leap year
+def leap_year():
+     if (year%4==0 and year%100!=0) or year%400==0:
+    	print(year, " is leap year")
+year = int(input("Enter the year to check wheater the year is leap year: "))
+
+
+# Check if a +ve integer is Perfect square:
+def square_verify(square_number)
+     while square_number>0:
+     	number = int(square_number**0.5)
+     	if square_number == number**2:
+    		print(square_number, "is a perfect square number")
+square_number = int(input("Enter the positive number to check wheather it's perfect square number: ")
+square_verify(square_number)
+
+                    
+#Find smallest of 3 distinct numbers
+def smallest(numbers):
+    while len(numbers)==3:
+        if numbers[0]<numbers[1] and numbers[0]<numbers[2]:
+            print(numbers[0], "is less than rest of the numbers")
+            break
+        elif numbers[1]<numbers[0] and numbers[1]<numbers[2]:
+            print(numbers[1], "is less than rest of the numbers")
+            break
+        else:
+            print(numbers[2], "is less than rest of the numbers")
+            break
+numbers = list(map(int, input().strip().split()))        
+smallest(numbers)
+
 #1.  Find biggest digit in a number
 number = input("Enter the Number: ")
 my_list = []
@@ -7,7 +40,13 @@ for i in number:
     my_list.append(num)
     my_list.sort()
 print("The largest number is : ", my_list[len(my_list)-1])
-
+#2nd method
+number = input("Enter the Number: ")
+high = 0
+for i in number:
+    if high < int(i):
+        high = int(i)
+print("Highest digit is: ",high)
 
 #Find 2nd smallest digit in a number
 number = input("Enter the Number: ")
@@ -17,6 +56,17 @@ for i in number:
     my_list.append(num)
     my_list.sort()
 print("The second smallest number is : ", my_list[1])
+
+#2- attempt
+number = input("Enter the Number without zero: ")
+mylist = []
+for i in number:
+    mylist.append(int(i))
+mylist = set(mylist)  #for de-duplication 
+mylist = list(mylist)  #for de-duplication process
+mylist.sort()
+print(mylist)
+print("smallest digit is: ",mylist[1])
 
 
 #Count number of Prime digits in a number
@@ -30,14 +80,21 @@ print(count)
 
 
 #Print the Prime numbers in decreasing order between m and n (m < n)
-m = int(input("Enter the lower range: "))
-n = int(input("Enter the Higher range: "))
-for i in range(2, n):
-    count = 0
-    for j in range(2, i):
-        if i%j == 0:
-            count+=1
-    if count==0:
+def prime_list(m, n):
+    prime = []
+    if m >= 2:
+        for i in range(m, n):
+            count = 0
+            for j in range(m, i):
+                if i%j == 0:
+                    count+=1
+            if count==0:
+                prime.append(i)
+        prime.sort(reverse = True)
+        print(f"{prime} is the list of prime numbers from {m} to {n}")
+m = int(input("Enter the lower range(should be <=2): "))
+n = int(input("Enter the Higher range: "))   
+prime_list(m, n)
         
 
 #stack implementation using list
@@ -73,7 +130,7 @@ while True:
             print("Invalid choice: ")
         
 
-#Find sum of thye series n - n2/3 + n4/5 - n8/7 .... m terms (1<=n<=4 and 2<=m<=10)
+#Find sum of the series n - n2/3 + n4/5 - n8/7 .... m terms (1<=n<=4 and 2<=m<=10)
 def series():
     if n in range(1, 5) and  m in range(2, 11):
         sign = -1
@@ -173,5 +230,24 @@ def x_shape(n):
             print()
 n = int(input("Enter Only Odd Numbers for Symmerty: "))
 x_shape(n)
+#x-shape
+def x_shape(n):
+    if n >= 3 and n%2 == 1:
+        mid = n//2
+        for i in range(n):
+            for j in range(n):
+                if i == 0 or  j == 0 or i == n-1 or j == n-1:
+                    print("*", end ='')
+                elif i == j or i + j == n - 1:
+                    if i == mid and j == mid:
+                        print("0", end = '')
+                    else:
+                        print("*", end = '')
 
+                else:
+                    print(" ", end = '')
+            print()
+
+n = int(input())
+x_shape(n)
 
