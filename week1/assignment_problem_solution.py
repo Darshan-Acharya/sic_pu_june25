@@ -230,6 +230,9 @@ def x_shape(n):
             print()
 n = int(input("Enter Only Odd Numbers for Symmerty: "))
 x_shape(n)
+
+
+
 #x-shape
 def x_shape(n):
     if n >= 3 and n%2 == 1:
