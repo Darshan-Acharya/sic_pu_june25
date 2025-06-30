@@ -1,19 +1,19 @@
 #assaignment questions
 
 #Check if a year is Leap year
-def leap_year():
+def leap_year(year):
      if (year%4==0 and year%100!=0) or year%400==0:
-    	print(year, " is leap year")
+        print(year, " is leap year")
 year = int(input("Enter the year to check wheater the year is leap year: "))
-
+leap_year(year)
 
 # Check if a +ve integer is Perfect square:
-def square_verify(square_number)
-     while square_number>0:
-     	number = int(square_number**0.5)
-     	if square_number == number**2:
-    		print(square_number, "is a perfect square number")
-square_number = int(input("Enter the positive number to check wheather it's perfect square number: ")
+def square_verify(square_number):
+    if square_number > 0:
+        number = int(square_number**0.5)         
+        if square_number == number**2:
+            print(square_number, "is a perfect square number")
+square_number = int(input("Enter the positive number to check wheather it's perfect square number: "))
 square_verify(square_number)
 
                     

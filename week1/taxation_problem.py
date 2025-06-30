@@ -38,3 +38,16 @@ tax += gross_annual_salary*(4/100)
 print("Tax applied for you (including health and educaion tax)", tax)
 net_annual_salary = gross_annual_salary - tax
 print("The net salary after deduction of all taxes: ", net_annual_salary)
+print("Gross annual salary: ", gross_annual_salary)
+
+def report():
+    print("-"*25)
+    print("Employee Name: ", employee_name.capitalize())
+    print("Employee ID: ", employee_ID)
+    print("Monthly Salary: ", monthly_salary)
+    print("Annual Gross Salary: ", gross_annual_salary)
+    print("Tax applied for you (including health and educaion tax)", tax)
+    net_annual_salary = gross_annual_salary - tax
+    print("The net salary after deduction of all taxes: ", net_annual_salary)
+    print("-"*25)
+report()
