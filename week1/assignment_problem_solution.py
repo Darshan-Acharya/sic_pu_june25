@@ -282,3 +282,19 @@ def x_shape(n):
 n = int(input("Enter the number of lines for the X-shape Printing inside a Hallow Square where center is 0(enter odd only <=3): "))
 x_shape(n)
 
+def benzene():
+    for i in range(7):
+        for j in range(i, 5):
+            if (j == 2 and(i == 0 or i== 6)) or ((i == 2 or i == 4) and (j == 0 or j ==4)):
+                print("C", end = '')
+            elif (i == 1 and j ==1) or (i == 5 and j ==3):
+                print("/", end = '')
+            elif (i ==1 and j == 3) or (j == 1 or i == 5):
+                print("|", end ='')
+            elif (i == 3 and (j == 0 or j == 4)):
+                print("|", end = '')
+
+            else:
+                print(" ", end = '')
+        print()
+benzene()                      
