@@ -2,9 +2,8 @@
 
 #Check if a year is Leap year
 def leap_year(year):
-     if (year%4==0 and year%100!=0) or year%400==0:
-<<<<<<< HEAD
-    	 print(year, " is leap year")
+    if (year%4==0 and year%100!=0) or year%400==0:
+    	print(year, " is leap year")
 year = int(input("Enter the year to check for leap year: "))
 
 
@@ -15,8 +14,8 @@ def square_verify(square_number):
         if square_number == number**2:
     	    print(square_number, "is a perfect square number")
 square_number = int(input("Enter the positive number to check for perfect square number: "))
-=======
-        print(year, " is leap year")
+
+print(year, " is leap year")
 year = int(input("Enter the year to check wheater the year is leap year: "))
 leap_year(year)
 
@@ -27,7 +26,7 @@ def square_verify(square_number):
         if square_number == number**2:
             print(square_number, "is a perfect square number")
 square_number = int(input("Enter the positive number to check wheather it's perfect square number: "))
->>>>>>> 42842343d916e37c943a627a8f9007d9857ffd6d
+#>>>>>>> 42842343d916e37c943a627a8f9007d9857ffd6d
 square_verify(square_number)
 
                     
@@ -245,8 +244,6 @@ def x_shape(n):
             print()
 n = int(input("Enter Only Odd Numbers for Symmerty: "))
 x_shape(n)
-
-<<<<<<< HEAD
 #trangle 2nd type:
 def triangle(n):
     for i in range(n):
@@ -257,11 +254,9 @@ triangle(n)
 
 
 #x-shape with 0 in centre inside a hallow square
-=======
-
 
 #x-shape
->>>>>>> 42842343d916e37c943a627a8f9007d9857ffd6d
+#>>>>>>> 42842343d916e37c943a627a8f9007d9857ffd6d
 def x_shape(n):
     if n >= 3 and n%2 == 1:
         mid = n//2
@@ -297,4 +292,22 @@ def benzene():
             else:
                 print(" ", end = '')
         print()
-benzene()                      
+benzene()   
+#pascle's triangle
+def pascle(n):
+    triangle = []
+    for i in range(n):
+        row = []
+        for j in range(i+1):
+            if j == 0 or j == i:
+                row.append(1)
+            else:
+                row.append(triangle[i-1][j-1] + triangle[i-1][j])
+        triangle.append(row)
+    for i in range(n):
+        print(" "*(n-1-i), end = '')
+        for j in range(i+1):
+            print(triangle[i][j], end = ' ')
+        print()
+n = int(input("Enter the number of lines for pascle's Triangle: "))
+pascle(n)
