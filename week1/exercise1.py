@@ -13,5 +13,5 @@ def pascle(n):
         for j in range(i+1):
             print(triangle[i][j], end = ' ')
         print()
-n = int(input("Enter the num: "))
-pascle(n)
+number = int(input("Enter the num: "))
+pascle(number)
