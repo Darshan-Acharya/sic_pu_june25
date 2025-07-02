@@ -1,8 +1,11 @@
 def binary_search(mylist, size, key):
+
     low = 0
     high = size-1
+
     while(low <= high):
         mid = (high + low)//2
+        
         if mylist[mid] == key:
             return (f"{key} is positioned at {mid} index")
         elif mylist[mid] > key:

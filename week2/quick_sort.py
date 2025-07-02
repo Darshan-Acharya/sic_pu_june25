@@ -11,7 +11,8 @@ def partition(arr, l, h):
             arr[i], arr[k] = arr[k], arr[i]
             k+=1
     arr[k], arr[h] = arr[h], arr[k]
+    return k
 arr = list(map(int, input("Enter the array elements: ").strip().split()))
 l = 0
 h = len(arr) - 1
-quick_sort(arr, l, h)
+print(quick_sort(arr, l, h))
