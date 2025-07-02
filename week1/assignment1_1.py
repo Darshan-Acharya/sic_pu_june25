@@ -26,6 +26,15 @@ print(count)
 #Print the Prime numbers in decreasing order between m and n (m < n)
 m = int(input("Enter the lower range: "))
 n = int(input("Enter the Higher range: "))
+<<<<<<< HEAD
+for i in range(2, n):
+    count = 0
+    for j in range(2, i):
+        if i%j == 0:
+            count+=1
+    if count==0:
+        
+=======
 prime = []
 for i in range(n, m, -1):
     count = 0
@@ -35,3 +44,4 @@ for i in range(n, m, -1):
     if count == 0:
         prime.append(i)
 print(prime)
+>>>>>>> 42842343d916e37c943a627a8f9007d9857ffd6d

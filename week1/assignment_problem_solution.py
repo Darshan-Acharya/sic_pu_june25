@@ -2,8 +2,20 @@
 
 #Check if a year is Leap year
 def leap_year(year):
-     if (year%4==0 and year%100!=0) or year%400==0:
-        print(year, " is leap year")
+    if (year%4==0 and year%100!=0) or year%400==0:
+    	print(year, " is leap year")
+year = int(input("Enter the year to check for leap year: "))
+
+
+# Check if a +ve integer is Perfect square:
+def square_verify(square_number):
+    number = int(square_number**0.5)
+    if square_number > 0:
+        if square_number == number**2:
+    	    print(square_number, "is a perfect square number")
+square_number = int(input("Enter the positive number to check for perfect square number: "))
+
+print(year, " is leap year")
 year = int(input("Enter the year to check wheater the year is leap year: "))
 leap_year(year)
 
@@ -14,6 +26,7 @@ def square_verify(square_number):
         if square_number == number**2:
             print(square_number, "is a perfect square number")
 square_number = int(input("Enter the positive number to check wheather it's perfect square number: "))
+#>>>>>>> 42842343d916e37c943a627a8f9007d9857ffd6d
 square_verify(square_number)
 
                     
@@ -29,27 +42,27 @@ def smallest(numbers):
         else:
             print(numbers[2], "is less than rest of the numbers")
             break
-numbers = list(map(int, input().strip().split()))        
+numbers = list(map(int, input("Enter 3 distinct number: ").strip().split()))        
 smallest(numbers)
 
 #1.  Find biggest digit in a number
-number = input("Enter the Number: ")
+number = input("Enter the Number for biggest digit validation: ")
 my_list = []
 for i in number:
     num = int(i)
     my_list.append(num)
     my_list.sort()
-print("The largest number is : ", my_list[len(my_list)-1])
+print("The biggest digit is : ", my_list[len(my_list)-1])
 #2nd method
-number = input("Enter the Number: ")
+number = input("Enter the Number for biggest digit validation: ")
 high = 0
 for i in number:
     if high < int(i):
         high = int(i)
-print("Highest digit is: ",high)
+print("Biggest digit is: ",high)
 
 #Find 2nd smallest digit in a number
-number = input("Enter the Number: ")
+number = input("Enter the Number for 2nd-smallest digit validation: ")
 my_list = []
 for i in number:
     num = int(i)
@@ -66,17 +79,17 @@ mylist = set(mylist)  #for de-duplication
 mylist = list(mylist)  #for de-duplication process
 mylist.sort()
 print(mylist)
-print("smallest digit is: ",mylist[1])
+print("Ths second smallest digit is(after deduplication): ",mylist[1])
 
 
 #Count number of Prime digits in a number
-number = input("Enter the Number: ")
+number = input("Enter the Number to count the No/ of Prime digits Count: ")
 count = 0
 for i in number:
     num = int(i)
     if num in [2, 3, 5, 7]:
         count+=1
-print(count)
+print(count,"is the count of prime digits")
 
 
 #Print the Prime numbers in decreasing order between m and n (m < n)
@@ -144,12 +157,13 @@ def series():
         print(Sum,f" is the sum of firs {m} for term {n}") 
     else:
         print("Enter the n and m value within the range: ")
-n = int(input("Enter the term(between 1 to 4): "))
-m = int(input("Enter the length(between 2 to 10): "))
+print("Enter the term and it's length for the series (N - N^2/3 + N^4/5......M)")
+n = int(input("Enter the term(between 1 to 4)(N): "))
+m = int(input("Enter the length(between 2 to 10)(M): "))
 series()
 
-#Frequency calculator
-def element_frequency():
+#Frequency of a element calculator
+def element_frequency(mylist):
     countlist = []
     for i in range(len(mylist)):
         count = 0
@@ -160,7 +174,7 @@ def element_frequency():
             countlist.append(mylist[i])
             print(f'frequency of {mylist[i]} is {count} times')
 mylist = list(map(int, input("Enter the list elements for the frequency calculation: ").strip().split()))
-element_frequency()
+element_frequency(mylist)
 
 #deduplication
 def list_deduplication():
@@ -170,7 +184,7 @@ def list_deduplication():
         if mylist[i] not in newlist:
             newlist.append(mylist[i])
     print(f"deduplicated list is {newlist}")
-mylist = list(map(int, input("Enter the list elements for the frequency calculation: ").strip().split()))
+mylist = list(map(int, input("Enter the list elements for the deduplication: ").strip().split()))
 list_deduplication()
 
 
@@ -184,7 +198,7 @@ def kaprekar_constant(n):
         steps += 1
     if n == 6174:
         print("kaprekar's constant found after ",steps," steps")
-number = int(input("Enter a 4 digit number for kaprekar's number validation: "))
+number = int(input("Enter a 4 digit number for kaprekar's number for step count: "))
 kaprekar_constant(number)
 
 
@@ -192,7 +206,7 @@ kaprekar_constant(number)
 def triangle(n):
     for i in range(1, n+1):
         print("*"*i)
-n = int(input("Enter the number of lines to print Triangle: "))
+n = int(input("Enter the number of lines to print Right-Triangle: "))
 triangle(n)
 
 
@@ -201,7 +215,7 @@ def triangle(n):
     for i in range(n):
         print(" "*(n-1-i), end='')
         print("* "*(i+1))
-n = int(input("Enter the number of lines to print Equilateral-Triangle: "))
+n = int(input("Enter the number of lines to print Equilateral-Triangle(Pascle's triangle): "))
 triangle(n)
 
 
@@ -216,7 +230,7 @@ n = int(input("Enter the number of lines to print Rectangle: "))
 square(n)
 
 
-
+#X - Shape
 def x_shape(n):
     if n%2 == 0:
         print("Enter Only Odd numbers..!!!!!:')")
@@ -230,10 +244,19 @@ def x_shape(n):
             print()
 n = int(input("Enter Only Odd Numbers for Symmerty: "))
 x_shape(n)
+#trangle 2nd type:
+def triangle(n):
+    for i in range(n):
+        print("* "*(2*i+1))
+n = int(input("Enter the number of lines to print Equilateral-Triangle(Pascle's triangle): "))
+triangle(n)
 
 
+
+#x-shape with 0 in centre inside a hallow square
 
 #x-shape
+#>>>>>>> 42842343d916e37c943a627a8f9007d9857ffd6d
 def x_shape(n):
     if n >= 3 and n%2 == 1:
         mid = n//2
@@ -251,7 +274,7 @@ def x_shape(n):
                     print(" ", end = '')
             print()
 
-n = int(input())
+n = int(input("Enter the number of lines for the X-shape Printing inside a Hallow Square where center is 0(enter odd only <=3): "))
 x_shape(n)
 
 def benzene():
@@ -269,4 +292,22 @@ def benzene():
             else:
                 print(" ", end = '')
         print()
-benzene()                      
+benzene()   
+#pascle's triangle
+def pascle(n):
+    triangle = []
+    for i in range(n):
+        row = []
+        for j in range(i+1):
+            if j == 0 or j == i:
+                row.append(1)
+            else:
+                row.append(triangle[i-1][j-1] + triangle[i-1][j])
+        triangle.append(row)
+    for i in range(n):
+        print(" "*(n-1-i), end = '')
+        for j in range(i+1):
+            print(triangle[i][j], end = ' ')
+        print()
+n = int(input("Enter the number of lines for pascle's Triangle: "))
+pascle(n)
