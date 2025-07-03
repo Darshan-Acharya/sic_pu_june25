@@ -1,11 +1,13 @@
 def bubble_sort(mylist):
-    for i in range(len(mylist)-1):
+    n = len(mylist)
+    for i in range(n):
         sorting = True
-        for j in range(i-1):
+        for j in range(n - i - 1):
             if mylist[j] > mylist[j+1]:
                 mylist[j] , mylist[j+1] = mylist[j+1] , mylist[j]
                 sorting = False
         if sorting:
             break
+    return mylist
 mylist = list(map(int, input("Enter the array elements: ").strip().split()))
-bubble_sort(mylist)
+print(bubble_sort(mylist))
