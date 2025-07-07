@@ -1,11 +1,11 @@
+
 def farmer_sale_calculator():
-    def farmer_sale_calculator():
     total_acres = 80
     segments = 5
     acre_per_segment = total_acres / segments
     crops = ['Tomoto', 'Potato', 'Cabbagge', 'sunflower', 'sugarcane']
-    tomoto_yeild = 0.3*(acre_per_segment)*(10) + 0.7*(acre_per_segment)*(12)
     pototo_yeild = 10*acre_per_segment
+    tomoto_yeild = 0.3*(acre_per_segment)*(10) + 0.7*(acre_per_segment)*(12)
     cabbage_yeild = 14*acre_per_segment
     sunflower_yeild = 0.7*acre_per_segment
     sugarcane_yeild = 45*acre_per_segment
