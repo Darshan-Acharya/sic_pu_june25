@@ -3,7 +3,14 @@ import pymysql
 def connect_db():
     connection = None
     try:
-        connection = pymysql.Connect(host='localhost', user="root", password="dARSHAN@1802", datebase='darshan_db', port=3306, charset="utf8")
+        connection = pymysql.Connect(
+            host='localhost',
+            user="root",
+            password="dARSHAN@1802",
+            database='darshan_db',  # Fixed typo here
+            port=3306,
+            charset="utf8"
+        )
         print('Database Connected')
     except:
         print('Database Connection Failed')
@@ -29,5 +36,4 @@ def creat_db():
         print('Database creation failed')
 
 connection = connect_db()
-# connection.close() # to disconnect the DB
 disconnect_db(connection)
