@@ -3,7 +3,18 @@ import pymysql
 def connect_db():
     connection = None
     try:
+<<<<<<< HEAD
+        connection = pymysql.Connect(
+            host='localhost',
+            user="root",
+            password="dARSHAN@1802",
+            database='darshan_db',  # Fixed typo here
+            port=3306,
+            charset="utf8"
+        )
+=======
         connection = pymysql.Connect(host='localhost', user="root", password="dARSHAN@1802", database = "darshan_db", port = 3306, charset = "utf8")
+>>>>>>> df6f6f19a6ac4365eb380826c6044a55ecc1e1d0
         print('Database Connected')
     except:
         print('Database Connection Failed')
@@ -57,6 +68,10 @@ def read_all_employees():
         print('Rows retrival failed')
 
 connection = connect_db()
+<<<<<<< HEAD
+disconnect_db(connection)
+=======
 create_table()
 disconnect_db(connection)
 #connection.close() # to disconnect the DB
+>>>>>>> df6f6f19a6ac4365eb380826c6044a55ecc1e1d0
