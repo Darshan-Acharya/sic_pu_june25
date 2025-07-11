@@ -1,10 +1,3 @@
-'''
-add node
-search node
-list tree (inorder / preorder / postorder)
-delete node
-'''
-
 class Node:
     def __init__(self, data = 0):
         if data == 0:
@@ -77,6 +70,12 @@ class BST:
                 temp.data = None
                 temp.root = temp.left
                 temp.root.right = temp.right
+    def zig_zag_traversal(self, temp):
+        if temp == None:
+            return
+        print(temp.data, end = "   ")
+        self.zig_zag_traversal(temp.right)
+        self.zig_zag_traversal(temp.left)
     
 
 class Menu:
@@ -118,14 +117,18 @@ class Menu:
                     return
                 delete_data = int(input('Enter data of the node to be deleted: '))
                 bst.delete_node(bst.root, delete_data)
-            case 7 : self.choice = 0
+            case 7 : 
+                if self.is_tree_empty(bst):
+                    return
+                bst.zig_zag_traversal(bst.root)
+            case 8 : self.choice = 0
             case _ : print('Invalid choice')
 
     
     def start_app(self):
         bst = BST()
         while True:
-            print('1:Add 2:Search 3:Inorder 4:PreOrder 5:PostOrder 6:Delete 7:Exit')
+            print('1:Add 2:Search 3:Inorder 4:PreOrder 5:PostOrder 6:Delete 7:zig zag traversal 8:exit')
             self.choice = int(input('Enter your choice: '))
             self.menu(bst)
             if self.choice == 0:
