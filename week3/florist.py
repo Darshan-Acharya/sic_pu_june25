@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+import pdb as p
+p.set_trace()
+>>>>>>> 8284640b01fa9c755e75d18f54e477340bab4f9b
 def getMinimumCost(k, c): # k = 2
     c.sort() # 2 5 6
     i = 1
@@ -18,6 +23,10 @@ if __name__ == '__main__':
     n = int(nk[0])
     k = int(nk[1])
     print('Enter cost of the flowers:')
+<<<<<<< HEAD
     c = list(map(int, input().strip().split()))
+=======
+    c = list(map(int, input().rstrip().split()))
+>>>>>>> 8284640b01fa9c755e75d18f54e477340bab4f9b
     minimumCost = getMinimumCost(k, c)
     print(f'Minimum Cost = {minimumCost}')
