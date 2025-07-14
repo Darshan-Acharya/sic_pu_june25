@@ -1,12 +1,18 @@
-def selection_sort(mylist):
-    for i in range(1,  len(mylist)):
-        element = mylist[i-1]
-        position = i-1
-        for j in range(i-1, len(mylist)):
-            if mylist[j] < element:
-                element = mylist[j]
-                position = j
-                mylist[position], mylist[i - 1] = mylist[i - 1], mylist[position]
-    return mylist
-mylist = list(map(int, input("Enter the array elements: ").strip().split()))
-selection_sort(mylist)
+def selection_sort(my):
+    length = len(my)
+    count = 0
+    for i in range(length -1):
+        smallest = i
+        for j in range(i+1, length):
+            if my[j] < my[smallest]:
+                smallest = j
+                count += 1
+
+        my[smallest], my[i]  = my[i], my[smallest]
+        count += 1
+    return my, count
+mylist = list(map(int, input("Enter the unsorted list elements: ").strip().split()))
+print(selection_sort(mylist))
+
+# import numpy as np
+# array1 = np.array([12, 9, 7], [15, 17, 30])
