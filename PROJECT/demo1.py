@@ -212,11 +212,11 @@ class RailGuardProApp:
 
     def get_density_color_code(self, density):
         """Returns hex color code based on density."""
-        if density > 1850: 
+        if density > 85: 
             return '#cc0000' # Critical Red
-        if density > 1600: 
+        if density > 16: 
             return '#e6b800' # High Yellow
-        if density > 1000: 
+        if density > 35: 
             return '#28a745'
         return '#2a6496' # Low Blue
 
