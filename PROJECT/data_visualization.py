@@ -1,12 +1,4 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import engineer_branch_selection as ebs
-from Data_acquistion import engg_enrollment_analysist
-
-simulator = engg_enrollment_analysist()  
-simulator.generate_data()                
-data = simulator.data                   
-
+import Data_implementation as ebs  
 
 #reading the previously genearted .csv file 
 
