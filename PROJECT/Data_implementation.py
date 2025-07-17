@@ -11,7 +11,7 @@ def plot_enrollment_trends():
     for branch in grouped['Branch'].unique():
         branch_data = grouped[grouped['Branch'] == branch]
         plt.plot(branch_data['Year'], branch_data['Enrollment'], marker='o', label=branch)
-    plt.title('Engineering Enrollment Trends by Branch (2005-2024)')
+    plt.title('Engineering Enrollment Trends by Branch (2005-2024)', color = "orange", fontsize = 25)
     plt.xlabel('Year')
     plt.ylabel('Enrollment')
     plt.legend()
@@ -20,14 +20,12 @@ def plot_enrollment_trends():
     plt.show()
 
 def plot_yearly_distribution(year):
-    if year not in df['Year'].values:
-        print(f"No data available for the year {year}.")
-        return
+
     year = int(year)
     year_data = df[df['Year'] == year]
     plt.figure(figsize=(8, 8))
     plt.pie(year_data['Enrollment'], labels=year_data['Branch'], autopct='%1.1f%%', startangle=140)
-    plt.title(f'Enrollment Distribution by Branch in {year}')
+    plt.title(f'Enrollment Distribution by Branch in {year}', color = "orange", fontsize = 25)
     plt.axis('equal')
     plt.show()
 
@@ -45,7 +43,7 @@ def plot_growth_decline():
     colors = ['green' if val >= 0 else 'red' for val in growth_sorted]
     growth_sorted.plot(kind='bar', color=colors)
     plt.ylabel('Growth % from {} to {}'.format(first_year, last_year))
-    plt.title('Percentage Growth or Decline of Engineering Branch Enrollments')
+    plt.title('Percentage Growth or Decline of Engineering Branch Enrollments', color = "orange", fontsize = 20)
     plt.axhline(0, color='black', linewidth=0.8)
     plt.tight_layout()
     plt.show()
