@@ -1,141 +1,141 @@
 Year,Branch,Enrollment
-2005,Computer Science,1673
-2005,Mechanical,990
-2005,Electrical,1032
-2005,Civil,939
-2005,Chemical,690
-2005,Electronics,961
-2005,Aerospace,363
-2006,Computer Science,1547
-2006,Mechanical,1084
-2006,Electrical,995
-2006,Civil,899
-2006,Chemical,733
-2006,Electronics,962
-2006,Aerospace,347
-2007,Computer Science,1624
-2007,Mechanical,1128
-2007,Electrical,1009
-2007,Civil,916
-2007,Chemical,785
-2007,Electronics,934
-2007,Aerospace,372
-2008,Computer Science,1538
-2008,Mechanical,1130
-2008,Electrical,950
-2008,Civil,881
-2008,Chemical,796
-2008,Electronics,948
-2008,Aerospace,357
-2009,Computer Science,1481
-2009,Mechanical,1187
-2009,Electrical,955
-2009,Civil,898
-2009,Chemical,867
-2009,Electronics,979
-2009,Aerospace,363
-2010,Computer Science,1512
-2010,Mechanical,1254
-2010,Electrical,921
-2010,Civil,862
-2010,Chemical,927
-2010,Electronics,918
-2010,Aerospace,374
-2011,Computer Science,1436
-2011,Mechanical,1289
-2011,Electrical,925
-2011,Civil,894
-2011,Chemical,966
-2011,Electronics,920
-2011,Aerospace,366
-2012,Computer Science,1412
-2012,Mechanical,1404
-2012,Electrical,903
-2012,Civil,844
-2012,Chemical,979
-2012,Electronics,949
-2012,Aerospace,393
-2013,Computer Science,1472
-2013,Mechanical,1424
-2013,Electrical,894
-2013,Civil,885
-2013,Chemical,1073
-2013,Electronics,905
-2013,Aerospace,378
-2014,Computer Science,1460
-2014,Mechanical,1473
-2014,Electrical,869
-2014,Civil,838
-2014,Chemical,1064
-2014,Electronics,932
-2014,Aerospace,376
-2015,Computer Science,1374
-2015,Mechanical,1524
-2015,Electrical,825
-2015,Civil,861
-2015,Chemical,1111
-2015,Electronics,901
-2015,Aerospace,406
-2016,Computer Science,1342
-2016,Mechanical,1632
-2016,Electrical,820
-2016,Civil,816
-2016,Chemical,1240
-2016,Electronics,926
-2016,Aerospace,391
-2017,Computer Science,1362
-2017,Mechanical,1726
-2017,Electrical,785
-2017,Civil,815
-2017,Chemical,1242
-2017,Electronics,919
-2017,Aerospace,405
-2018,Computer Science,1363
-2018,Mechanical,1736
-2018,Electrical,767
-2018,Civil,845
-2018,Chemical,1279
-2018,Electronics,921
-2018,Aerospace,397
-2019,Computer Science,1314
-2019,Mechanical,1883
-2019,Electrical,773
-2019,Civil,838
-2019,Chemical,1428
-2019,Electronics,892
-2019,Aerospace,405
-2020,Computer Science,1280
-2020,Mechanical,1884
-2020,Electrical,732
-2020,Civil,832
-2020,Chemical,1427
-2020,Electronics,914
-2020,Aerospace,419
-2021,Computer Science,1284
-2021,Mechanical,1958
-2021,Electrical,724
-2021,Civil,829
-2021,Chemical,1571
-2021,Electronics,874
-2021,Aerospace,429
-2022,Computer Science,1204
-2022,Mechanical,2059
-2022,Electrical,749
-2022,Civil,797
-2022,Chemical,1636
-2022,Electronics,877
-2022,Aerospace,425
-2023,Computer Science,1238
-2023,Mechanical,2145
-2023,Electrical,721
-2023,Civil,779
-2023,Chemical,1684
-2023,Electronics,881
-2023,Aerospace,432
-2024,Computer Science,1208
-2024,Mechanical,2247
-2024,Electrical,709
-2024,Civil,760
-2024,Chemical,1749
-2024,Electronics,906
-2024,Aerospace,429
+2005,Computer Science,1577
+2005,Mechanical,1042
+2005,Electrical,1001
+2005,Civil,892
+2005,Chemical,719
+2005,Electronics,993
+2005,Aerospace,353
+2006,Computer Science,1668
+2006,Mechanical,1018
+2006,Electrical,1082
+2006,Civil,947
+2006,Chemical,744
+2006,Electronics,1016
+2006,Aerospace,370
+2007,Computer Science,1570
+2007,Mechanical,1025
+2007,Electrical,1069
+2007,Civil,923
+2007,Chemical,710
+2007,Electronics,997
+2007,Aerospace,373
+2008,Computer Science,1659
+2008,Mechanical,1026
+2008,Electrical,1108
+2008,Civil,965
+2008,Chemical,725
+2008,Electronics,1027
+2008,Aerospace,383
+2009,Computer Science,1626
+2009,Mechanical,989
+2009,Electrical,1156
+2009,Civil,974
+2009,Chemical,783
+2009,Electronics,1040
+2009,Aerospace,406
+2010,Computer Science,1634
+2010,Mechanical,1032
+2010,Electrical,1263
+2010,Civil,981
+2010,Chemical,756
+2010,Electronics,1120
+2010,Aerospace,409
+2011,Computer Science,1614
+2011,Mechanical,1010
+2011,Electrical,1312
+2011,Civil,962
+2011,Chemical,772
+2011,Electronics,1136
+2011,Aerospace,420
+2012,Computer Science,1650
+2012,Mechanical,1002
+2012,Electrical,1326
+2012,Civil,962
+2012,Chemical,784
+2012,Electronics,1150
+2012,Aerospace,446
+2013,Computer Science,1605
+2013,Mechanical,1015
+2013,Electrical,1395
+2013,Civil,997
+2013,Chemical,815
+2013,Electronics,1168
+2013,Aerospace,466
+2014,Computer Science,1566
+2014,Mechanical,1042
+2014,Electrical,1449
+2014,Civil,981
+2014,Chemical,816
+2014,Electronics,1179
+2014,Aerospace,468
+2015,Computer Science,1628
+2015,Mechanical,1034
+2015,Electrical,1537
+2015,Civil,1008
+2015,Chemical,862
+2015,Electronics,1247
+2015,Aerospace,502
+2016,Computer Science,1635
+2016,Mechanical,1024
+2016,Electrical,1600
+2016,Civil,1021
+2016,Chemical,886
+2016,Electronics,1266
+2016,Aerospace,509
+2017,Computer Science,1646
+2017,Mechanical,1019
+2017,Electrical,1624
+2017,Civil,1052
+2017,Chemical,879
+2017,Electronics,1311
+2017,Aerospace,521
+2018,Computer Science,1552
+2018,Mechanical,1028
+2018,Electrical,1690
+2018,Civil,1027
+2018,Chemical,917
+2018,Electronics,1361
+2018,Aerospace,535
+2019,Computer Science,1559
+2019,Mechanical,991
+2019,Electrical,1794
+2019,Civil,1031
+2019,Chemical,937
+2019,Electronics,1333
+2019,Aerospace,554
+2020,Computer Science,1611
+2020,Mechanical,1024
+2020,Electrical,1871
+2020,Civil,1038
+2020,Chemical,899
+2020,Electronics,1401
+2020,Aerospace,598
+2021,Computer Science,1615
+2021,Mechanical,1011
+2021,Electrical,1963
+2021,Civil,1043
+2021,Chemical,912
+2021,Electronics,1400
+2021,Aerospace,601
+2022,Computer Science,1567
+2022,Mechanical,1019
+2022,Electrical,1925
+2022,Civil,1094
+2022,Chemical,975
+2022,Electronics,1462
+2022,Aerospace,639
+2023,Computer Science,1582
+2023,Mechanical,979
+2023,Electrical,2063
+2023,Civil,1096
+2023,Chemical,954
+2023,Electronics,1534
+2023,Aerospace,627
+2024,Computer Science,1593
+2024,Mechanical,1014
+2024,Electrical,2170
+2024,Civil,1075
+2024,Chemical,1003
+2024,Electronics,1565
+2024,Aerospace,662

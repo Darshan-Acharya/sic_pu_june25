@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 from Data_acquistion import engg_enrollment_analysist
 
 df = pd.read_csv("enrollment_data.csv")
@@ -20,7 +21,6 @@ def plot_enrollment_trends():
     plt.show()
 
 def plot_yearly_distribution(year):
-
     year = int(year)
     year_data = df[df['Year'] == year]
     plt.figure(figsize=(8, 8))
@@ -45,5 +45,15 @@ def plot_growth_decline():
     plt.ylabel('Growth % from {} to {}'.format(first_year, last_year))
     plt.title('Percentage Growth or Decline of Engineering Branch Enrollments', color = "orange", fontsize = 20)
     plt.axhline(0, color='black', linewidth=0.8)
+    plt.tight_layout()
+    plt.show()
+
+def plot_enrollment_heatmap(df):
+    pivot = df.pivot(index='Branch', columns='Year', values='Enrollment')
+    plt.figure(figsize=(10, 6))
+    sns.heatmap(pivot, fmt=".0f", cmap="OrRd", linewidths=.5)
+    plt.title('Enrollment Heatmap (Branches vs Years)')
+    plt.xlabel('Year')
+    plt.ylabel('Branch')
     plt.tight_layout()
     plt.show()
