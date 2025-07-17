@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
+import random as ran
 years = list(range(2005, 2025))#as per the two decades of the data 
 
 # Engineering branches
@@ -37,7 +37,7 @@ growth_rates = {
     "Aerospace": 0.03          # moderate growth
 }
 
-np.random.seed(42)  # for reproducibility
+ran.uniform(-2.0, 5.0)  # for reproducibility
 data = []
 
 for year in years:
