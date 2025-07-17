@@ -298,3 +298,8 @@ class RailGuardProApp:
 root = tk.Tk()
 app = RailGuardProApp(root)
 root.mainloop()
+'''Considering the camera data has been processed and the head count is being generated this project is only 
+on the prototypic-level for the advanced level we need to have the access specifier, feeding the camera data, have 
+a very responsive rail-gaurd member for the anti-stampede system to be successful we need to have the support of the
+civilian with their cooperartion we can save the life of the innocent peoples and make our country more sustainable, safe for
+for the civilians...'''
